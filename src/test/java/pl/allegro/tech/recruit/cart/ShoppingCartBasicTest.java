@@ -59,6 +59,7 @@ public class ShoppingCartBasicTest {
         Summary summary = cart.getSummary();
         assertEquals(service.getName(), summary.getItems().get(0).getProduct().getServices().get(0).getName());
         assertEquals(11, summary.getTotalPrice());
+
     }
 
     @Test

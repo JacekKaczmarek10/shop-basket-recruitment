@@ -33,4 +33,20 @@ public class CartItem {
         public int getPrice() {
                 return price;
         }
+
+        public void setPrice(int price) {
+                this.price = price;
+        }
+
+        public void setQuantity(int quantity) {
+                this.quantity = quantity;
+        }
+
+        public void addAdditionalServices(AdditionalService additionalService) {
+                additionalServices.add(additionalService);
+        }
+
+        public void deleteAdditionalServices(AdditionalService additionalService) {
+                additionalServices.remove(additionalService);
+        }
 }
